@@ -70,12 +70,19 @@ Agora que obtemos os nomes das interfaces daquele determinado host conseguimos v
 Pronto agora com o index podemos fazer buscas mais avançadas daquela interface, para facilitar vamos usar o comando grep para filtrar somente as informaçoes desta determinado interface, veja um exemplo abaixo:
 
 snmpwalk -v2c -c COMUNNITY 192.168.0.1 | grep .1234
+
 IF-MIB::ifName.1234 = STRING: INTERFACE ETH2
+
 IF-MIB::ifIndex.1234 = INTEGER: -100663296
+
 IF-MIB::ifMtu.1234 = INTEGER: 2000
+
 IF-MIB::ifSpeed.1234 = Gauge32: 1000000000
+
 IF-MIB::ifPhysAddress.1234 = STRING: 0:0:0:0:0:0
+
 IF-MIB::ifAdminStatus.1234 = INTEGER: up(1)
+
 IF-MIB::ifOperStatus.1234 = INTEGER: up(1)
 
 
