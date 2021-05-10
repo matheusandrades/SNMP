@@ -1,6 +1,6 @@
 # SNMP
 
-Hoje iremos falar de SNMP oq é e pra que ele serve.
+Hoje iremos falar do SNMP oq é, e pra que ele serve.
 O SNMP(Simple Network Management Protocol) é um protocolo padrão para monitoramento de dispositivos de rede. Ele pode ser usado tanto para fazer consultas quanto para inserir modificações.
 Alem disso o SNMP ja faz parte de grandes softwares de monitoramento como ZABBIX, Naggios entre outros.
 Nele existe as versões 1 2 e 3, vou citar abaixo a suas diferenças:
