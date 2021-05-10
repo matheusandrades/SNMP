@@ -18,6 +18,7 @@ Nele existe as versões 1 2 e 3, vou citar abaixo a suas diferenças:
  Cada agente possui 3 comunidades: read-only, read-write e trap
  
  Por padrão os equipamentos usam “public” e “private” para community
+ 
 
  ##SNMPv2##
  Desenvolvido como uma solução intermediária
@@ -36,7 +37,6 @@ Nele existe as versões 1 2 e 3, vou citar abaixo a suas diferenças:
  
  SNMPv2c – baseado em comunidade (Padrão)
 
- 
  SNMPv2u – baseado em usuários
 
  
