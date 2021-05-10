@@ -6,35 +6,63 @@ Alem disso o SNMP ja faz parte de grandes softwares de monitoramento como ZABBIX
 Nele existe as versões 1 2 e 3, vou citar abaixo a suas diferenças:
 
 ##SNMPv1##
+
  Utiliza o protocolo UDP para transmissão dos dados
+ 
  Agente escuta a porta 161
+ 
  Gerente escuta a porta 162 para receber traps
+ 
  Segurança fraca, baseada em comunidade (community string)
+ 
  Cada agente possui 3 comunidades: read-only, read-write e trap
+ 
  Por padrão os equipamentos usam “public” e “private” para community
 
  ##SNMPv2##
  Desenvolvido como uma solução intermediária
+ 
  Melhorias:
+ 
  Operação com outros protocolos além de UDP
+ 
  Suporte a comunicação gerente-gerente
+ 
  Novo formato de trap
+ 
  Forma criadas duas versões:
+ 
  SNMPv2p – baseado em parties (Complexo)
+ 
  SNMPv2c – baseado em comunidade (Padrão)
+
+ 
  SNMPv2u – baseado em usuários
 
+ 
+
  ##SNMPv3##
+ 
  Desenvolvido a partir de 1998
+ 
  Requisitos
+ 
  Manter compatibilidade com versões anteriores
+ 
  Resolver limitações das versões anteriores
+ 
  Arquitetura modular
+ 
  Manter o SNMP o mais simples possível
+ 
  USM (User-based Secutity Model)
+ 
  DES, MD5 e SHA1
+ 
  VACM (View-based Access Control Model)
+ 
  Controla quem pode e o que pode acessar
+ 
  Views – Grupos/Objetos que podem ser acessados
 
 Para que a consulta se torne mais facil o SNMP conta com um dicionario chamado MIB(Management Information Base) em portugues Base de Informação de Gestão, nela contem todas informações que facilitam na hora de realizar uma consulta.
@@ -64,6 +92,7 @@ snmpwalk -v2c -c COMUNNITY 192.168.0.1 ifName
 Vamos obter um resultado semelhante a este:
 
 IF-MIB::ifName.123 = STRING: INTERFACE ETH1
+
 IF-MIB::ifName.1234 = STRING: INTERFACE ETH2
 
 Agora que obtemos os nomes das interfaces daquele determinado host conseguimos verificar qual é o index do oid da interface que estamos monitorando, que no caso deste exemplo é a interface ETH2 onde o index é .1234 .
