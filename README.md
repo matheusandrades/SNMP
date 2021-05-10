@@ -5,6 +5,8 @@ O SNMP(Simple Network Management Protocol) é um protocolo padrão para monitora
 Alem disso o SNMP ja faz parte de grandes softwares de monitoramento como ZABBIX, Naggios entre outros.
 Nele existe as versões 1 2 e 3, vou citar abaixo a suas diferenças:
 
+
+
 ##SNMPv1##
 
  Utiliza o protocolo UDP para transmissão dos dados
@@ -18,6 +20,8 @@ Nele existe as versões 1 2 e 3, vou citar abaixo a suas diferenças:
  Cada agente possui 3 comunidades: read-only, read-write e trap
  
  Por padrão os equipamentos usam “public” e “private” para community
+ 
+ 
  
 
  ##SNMPv2##
@@ -38,6 +42,7 @@ Nele existe as versões 1 2 e 3, vou citar abaixo a suas diferenças:
  SNMPv2c – baseado em comunidade (Padrão)
 
  SNMPv2u – baseado em usuários
+ 
 
  
 
@@ -64,6 +69,8 @@ Nele existe as versões 1 2 e 3, vou citar abaixo a suas diferenças:
  Controla quem pode e o que pode acessar
  
  Views – Grupos/Objetos que podem ser acessados
+
+
 
 Para que a consulta se torne mais facil o SNMP conta com um dicionario chamado MIB(Management Information Base) em portugues Base de Informação de Gestão, nela contem todas informações que facilitam na hora de realizar uma consulta.
 Dentro da MIB nos consenguimos obter os OID e qual é a sua respectiva informações, para simplica vou dar um exemplo abaixo: 
